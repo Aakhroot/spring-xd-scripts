@@ -1,7 +1,7 @@
 @if "%DEBUG%" == "" @echo off
 rem @author Kamran Ahmad
 rem ###########################################################
-rem ###  Windows: Main script to start XD and other components
+rem ### Main script to start XD and other components
 rem ###########################################################
 
 call xd-env-setup.bat
@@ -16,4 +16,4 @@ echo ************************************************
 echo **** Single Node xd server startup
 echo ************************************************
 cd %XD_HOME%\bin
-xd-start-singlenode.bat
+xd-singlenode.bat
