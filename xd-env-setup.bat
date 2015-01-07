@@ -25,6 +25,10 @@ if not defined XD_ADMIN_GUI (
 	set XD_ADMIN_GUI=http://localhost:9393/admin-ui/ 
 )
 
+if not defined RABBITMQ_ADMIN_GUI (
+	set RABBITMQ_ADMIN_GUI=http://localhost:15672/ 
+)
+
 rem define, how many seconds to wait for XD server startup
 if not defined CMD_TIMEOUT (
 	set CMD_TIMEOUT=25 
