@@ -2,7 +2,7 @@
 rem @author Kamran Ahmad
 
 rem ######################################################################################################################
-rem This script can be used to system and user level variables fron windows registory.
+rem This script can be used to remove system and user level variables from windows registory.
 rem Admin permissions are required to remove system level variables.
 rem Deleteing env variables under HKEY_CURRENT_USER\Environment will also delete variables under HKEY_USERS\Environment.
 rem 
@@ -29,7 +29,6 @@ rem Common
 reg delete "HKEY_CURRENT_USER\Environment" /v SOFTWARE_HOME /f
 reg delete "HKEY_CURRENT_USER\Environment" /v GRADLE_HOME /f
 reg delete "HKEY_CURRENT_USER\Environment" /v JAVA_HOME /f
-
 
 echo After removing. 
 reg query "HKEY_CURRENT_USER\Environment"
