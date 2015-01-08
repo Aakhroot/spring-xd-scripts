@@ -1,6 +1,10 @@
 @if "%DEBUG%" == "" @echo off
 rem @author Kamran Ahmad
 
+rem ##############################################################
+rem ###### All dev env related path settings can be done here
+rem ##############################################################
+
 rem Provide where all your softwares are located e.g C:\Softwares
 if not defined SOFTWARE_HOME (
 	set SOFTWARE_HOME=C:\Software
@@ -17,6 +21,10 @@ if not defined HOME (
 if not defined GRADLE_HOME (
 	set GRADLE_HOME=%SOFTWARE_HOME%\gradle-2.2.1
 )
+
+rem set PATH
+set PATH=%PATH%;%SOFTWARE_HOME%\apache-maven-3.2.5\bin
+set PATH=%PATH%;%SOFTWARE_HOME%\Python27
 
 rem 
 echo SOFTWARE_HOME= %SOFTWARE_HOME%
